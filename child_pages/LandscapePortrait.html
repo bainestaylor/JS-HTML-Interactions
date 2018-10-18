@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
 
-    <title>FORM Beginnings</title>
+    <title>JavaScript Assignment Form Data</title>
 
     <meta name="author" content="Mark Mercer">
     <meta name="description" content="Basic HTML Form Collection, specific to an assignment"> <!-- Webpage Description to poplulate search engines like Google-->
@@ -17,12 +17,12 @@
 
   <body>
 
-    <header><h1>Child Page for JavaScript Assignments</h1></header>
+    <header><h1>JavaScript Assignments</h1></header>
     <nav><h2></h2></nav>
     <aside><p></p></aside>
     <section>
-      <h3>Assignment: [Title Name]</h3>
-      <p><a href="" target="_blank">Click Here for the Original Assignment</a></p>
+      <h3>Assignment: LandScape or Portrait</h3>
+      <p><a href="https://github.com/MercersKitchen/CS20/tree/master/Websites/JavaScript%20Lessons/JavaScript%20Only%20Assignments/LandScape%20or%20Portrait" target="_blank">Click Here for the Origonal Assignment</a></p>
 
       <!-- Below is the full HTML FORM Template for all Assignments-->
 
@@ -33,18 +33,14 @@
       <!-- See: https://www.w3schools.com/html/html_entities.asp-->
       <!-- Non-breaking real space, adds real space to webpage that is not eliminated by browser (hard coded space)-->
       <p>
-        <label for="textfield">Number 1:</label>
+        <label for="textfield">Width of Window</label>
         <input name="textfield1" type="text" id="textfield1">
       </p>
       <p>
-        <label for="textfield2">Number 2:</label>
+        <label for="textfield2">Height of Window</label>
         <input name="textfield2" type="text" id="textfield2">
       </p>
-      <!-- Textarea is mutliline plain text editing control-->
-      <p>
-        <label for="tArea">Text Area:</label>
-        <textarea type="tArea" cols="20" rows="4" id="password"></textarea>
-      </p>
+
       <p>&nbsp;</p>
 
         <fieldset>
@@ -52,7 +48,9 @@
           <br>
           <div>Test Case Examples</div>
           <ul>
-            <li>
+            <li> Width is greater than Height; Return LandScape
+            <li> Width is less than Height; Return Portrait
+            <li> WIdth equals Height; Return Square
           </ul>
             <label>
               <input type="radio" name="RadioGroup1" value="radio1" id="RadioGroup1_0">
@@ -73,12 +71,7 @@
 
       <p>&nbsp;</p>
         <fieldset>
-          <legend>Case Studies</legend>
-          <br>
-          <div>Test Case Examples</div>
-          <ul>
-            <li>
-          </ul>
+          <legend>Some Checkbox Buttons</legend>
             <label>
               <input type="checkbox" name="CheckboxGroup1" nalue="checkbox1" id="CheckboxGroup1_0">
               Checkbox 1
@@ -111,7 +104,7 @@
     <br><br><br>
 
     <!-- This is an exemplar link to the associated JavaScript DOC in another folder-->
-    <script src="../scripts/childTemplate.js"></script>
+    <script src="../scripts/LandscapePortrait.js"></script>
 
   </body>
 
