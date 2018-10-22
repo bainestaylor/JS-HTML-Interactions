@@ -6,114 +6,87 @@
 
     <meta charset="utf-8">
 
-    <title>JavaScript Assignment Form Data</title>
+    <title>JavaScript assignments</title>
 
     <meta name="author" content="Mark Mercer">
-    <meta name="description" content="Basic HTML Form Collection, specific to an assignment"> <!-- Webpage Description to poplulate search engines like Google-->
-    <meta name="keywords" content="Collecting User Data"> <!-- Key words for searching -->
+    <meta name="description" content="JavaScript Assignments"> <!-- Webpage Description to poplulate search engines like Google-->
+    <meta name="keywords" content="JavaScript, Arithtemtic, Validation"> <!-- Key words for searching -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   </head>
 
-  <body>
+<body>
 
-    <header><h1>JavaScript Assignments</h1></header>
-    <nav><h2></h2></nav>
-    <aside><p></p></aside>
-    <section>
-      <h3>Assignment: LandScape or Portrait</h3>
-      <p><a href="https://github.com/MercersKitchen/CS20/tree/master/Websites/JavaScript%20Lessons/JavaScript%20Only%20Assignments/LandScape%20or%20Portrait" target="_blank">Click Here for the Origonal Assignment</a></p>
+  <header><h1>JavaScript Assignments</h1></header>
+  <nav><h2></h2></nav>
+  <aside><p></p></aside>
+  <section>
+    <h3>Assignment: Landscape Or Portrait</h3>
+    <article><p></p></article>
+  </section>
 
-      <!-- Below is the full HTML FORM Template for all Assignments-->
+  <form action="x.html" method="post" onsubmit="event.preventDefault();">
+  <!-- Ensures this FORM doesn't work with PHP or other server side scripting languages-->
 
-      <form action="x.html" method="post" onsubmit="event.preventDefault();">
-        <!-- Ensures this FORM doesn't work with PHP or other server side scripting languages-->
+  <p>&nbsp;</p>
+  <!-- See: https://www.w3schools.com/html/html_entities.asp-->
+  <!-- Non-breaking real space, adds real space to webpage that is not eliminated by browser (hard coded space)-->
+  <p>
+    <label for="textfield">Width:</label>
+    <input name="textfield1" type="text" id="textfield1">
+      <a id="validityTest1">See the Alert</a>
+  </p>
+  <p>
+    <label for="textfield2">Height:</label>
+    <input name="textfield2" type="text" id="textfield2">
+    <a id="validityTest2">See the Alert</a>
+  </p>
 
-      <p>&nbsp;</p>
-      <!-- See: https://www.w3schools.com/html/html_entities.asp-->
-      <!-- Non-breaking real space, adds real space to webpage that is not eliminated by browser (hard coded space)-->
-      <p>
-        <label for="textfield">Width of Window</label>
-        <input name="textfield1" type="text" id="textfield1">
-      </p>
-      <p>
-        <label for="textfield2">Height of Window</label>
-        <input name="textfield2" type="text" id="textfield2">
-      </p>
+  <fieldset>
+    <legend>Case Studies</legend>
+    <div> Test Cases
+      <ul>
+        <li> Width is greater than Height, return Landscape
+        <li> Width is less than Height, return Portrait
+        <li> Width is equal to Height, return Sqaure
+      </ul>
+    </div>
+    <label>
+      <input type="checkbox" name="CheckboxGroup1" nalue="checkbox1" id="CheckboxGroup1_0">
+      Checkbox 1
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="CheckboxGroup1" nalue="checkbox2" id="CheckboxGroup1_1">
+      Checkbox 2
+    </label>
+    <br>
+    <label>
+      <input type="checkbox" name="CheckboxGroup1" nalue="checkbox3" id="CheckboxGroup1_2">
+      Checkbox 3
+    </label>
+    <br>
+  </fieldset>
 
-      <p>&nbsp;</p>
+  <!-- Submit Button-->
+  <br><br>
+  <button type="button" onclick="main()">Submit</button>
+  <br>
+  <h3>The Answer is:
+    <a id="answer">What is the Answer?!!!</a>
+  </h3>
 
-        <fieldset>
-          <legend>Case Studies</legend>
-          <br>
-          <div>Test Case Examples</div>
-          <ul>
-            <li> Width is greater than Height; Return LandScape
-            <li> Width is less than Height; Return Portrait
-            <li> WIdth equals Height; Return Square
-          </ul>
-            <label>
-              <input type="radio" name="RadioGroup1" value="radio1" id="RadioGroup1_0">
-              Radio 1
-            </label>
-            <br>
-            <label>
-              <input type="radio" name="RadioGroup1" value="radio2" id="RadioGroup1_1">
-              Radio 2
-            </label>
-            <br>
-            <label>
-              <input type="radio" name="RadioGroup1" value="radio3" id="RadioGroup1_2">
-              Radio 3
-            </label>
-            <br>
-          </fieldset>
+  <script src="../scripts/LandscapePortrait.js"></script>
 
-      <p>&nbsp;</p>
-        <fieldset>
-          <legend>Some Checkbox Buttons</legend>
-            <label>
-              <input type="checkbox" name="CheckboxGroup1" nalue="checkbox1" id="CheckboxGroup1_0">
-              Checkbox 1
-            </label>
-            <br>
-            <label>
-              <input type="checkbox" name="CheckboxGroup1" nalue="checkbox2" id="CheckboxGroup1_1">
-              Checkbox 2
-            </label>
-            <br>
-            <label>
-              <input type="checkbox" name="CheckboxGroup1" nalue="checkbox3" id="CheckboxGroup1_2">
-              Checkbox 3
-            </label>
-            <br>
-        </fieldset>
+</body>
 
-        <p>&nbsp;</p>
-        <!-- Submit Button-->
-        <input type="submit" id="subBtn" value="Submit information" />
-
-
-<!-- The rest of the HTML Layout is below simply to maintain the idea of starting wtih a boilerplate -->
-      <article><p></p></article>
-    </section>
-    <section><h3></h3>
-      <article><p></p></article>
-      <article><p></p></article>
-    </section>
-    <br><br><br>
-
-    <!-- This is an exemplar link to the associated JavaScript DOC in another folder-->
-    <script src="../scripts/LandscapePortrait.js"></script>
-
-  </body>
-
-  <footer>
-    <blockquote cite="https://www.brainyquote.com/quotes/mitchell_kapor_163583">
-    <!--  Date Accessed: 20180920 -->
-    <p><strong>"Getting information off the Internet is like taking a drink from a firehose."</strong>
-      <em><a href="https://www.brainyquote.com/quotes/mitchell_kapor_163583" target="_blank">- Michell Kapor</a></em></p>
-    <p>&copy Mark Mercer, powered by MercersKitchen in GitHub</p>
-  </footer>
+<br><br><br>
+<footer>
+  <blockquote cite="https://www.brainyquote.com/quotes/mitchell_kapor_163583">
+  <!--  Date Accessed: 20180920 -->
+  <p><strong>"Getting information off the Internet is like taking a drink from a firehose."</strong>
+    <em><a href="https://www.brainyquote.com/quotes/mitchell_kapor_163583" target="_blank">- Michell Kapor</a></em></p>
+  <p>&copy Mark Mercer, powered by MercersKitchen in GitHub</p>
+</footer>
 
 </html>
